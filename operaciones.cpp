@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #include <stdlib.h>
-#include <time.h>  
+#include <time.h>
 #include <windows.h>
 
 using namespace std;
@@ -11,6 +11,11 @@ void printNumber(int n,int mode){
 	if(n<0)cout<<" -";
 	else if(mode==1)cout<<" +";
 	cout<<" "<<abs(n);
+}
+pair<int,string> composedIntegerNumber(){
+	int answer = 0;
+	int numbers = rand()%4+1;
+	
 }
 void sumasEntero(){
 	srand (time(NULL));
@@ -23,7 +28,7 @@ void sumasEntero(){
 		Sleep(1000);
 	}
 	cout<<endl;
-	time(&time0);  
+	time(&time0);
 	for(int i=0;i<10;i++){
 		int times=number(2,3);
 		int ans=0,ansUser;
@@ -43,8 +48,8 @@ void sumasEntero(){
 		}else{
 			cout<<"\tOk, siguiente."<<endl;
 		}
-	}	
-	time(&time1);  
+	}
+	time(&time1);
 	cout<<"\tAcertadas: "<<10-falladas<<endl;
 	cout<<"\tFalladas: "<<falladas<<endl;
 	int tiempo =time1-time0;
@@ -74,9 +79,8 @@ void menu(){
 		case 4:
 			break;
 	}
-	
+
 }
 int main(){
 	menu();
 }
-
