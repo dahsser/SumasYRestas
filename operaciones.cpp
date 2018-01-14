@@ -24,7 +24,7 @@ pair<int,string> composedIntegerNumber(int l,int r){
 		s+=numberStr;
 		answer+=x;
 	}
-	int sign=random()%2;
+	int sign=rand()%2;
 	s+=")";
 	if(sign){
 		answer*=-1;
